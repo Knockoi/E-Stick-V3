@@ -1,6 +1,6 @@
 # E-Stick-V2   
 ## 語言選擇：
-[English](https://github.com/Knockoi/E-STICK-V2/edit/main/README.md) | [简体中文](https://github.com/Knockoi/E-Stick/blob/main/ReadmeCN.md) | [繁體中文](https://github.com/Knockoi/E-Stick/blob/main/ReadmeTC.md)
+[English](https://github.com/Knockoi/E-STICK-V2/edit/main/README.md) | [日本語](https://github.com/Knockoi/E-Stick/blob/main/ReadmeCN.md) | [繁體中文](https://github.com/Knockoi/E-STICK-V2/edit/main/ReadmeTC.md)
   
 ## 概述  
 這份生日禮物是為了我國小老師特別設計的，以最大程度提高投影機的實用性。它具備了無線滑鼠功能，讓我無需再返回電腦，可以輕鬆控制投影機。

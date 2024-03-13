@@ -1,6 +1,6 @@
 # E-Stick-V2   
 ## 語言選擇：
-[English](https://github.com/Knockoi/E-STICK-V2/blob/main/README.md) | [日本語](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeJP.md) | [繁體中文](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeTC.md)
+[English](https://github.com/Knockoi/E-STICK-V2/blob/main/README.md) | [日本語](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeJP.md) | [繁體中文](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeTC.md)  
   
 ##預告影片  
 第一幕: https://www.youtube.com/watch?v=njI8RSczQoE

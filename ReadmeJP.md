@@ -1,6 +1,6 @@
 ## E-Stick-V2   
 ## 言語選択
-[English](https://github.com/Knockoi/E-STICK-V2/edit/main/README.md) | [日本語](https://github.com/Knockoi/E-STICK-V2/blob/main/) ReadmeJP.md) | [繁体字中国語](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeTC.md)
+[English](https://github.com/Knockoi/E-STICK-V2/edit/main/README.md) | [日本語](https://github.com/Knockoi/E-STICK-V2/blob/main/) | [繁体字中国語](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeTC.md)
   
 ## 概要  
 この誕生日プレゼントは、プロジェクターの有用性を最大限に引き出すために、私たちの小さな先生のために特別にデザインされました。 ワイヤレスマウス機能が付いているので、パソコンに戻ることなく簡単にプロジェクターを操作することができます。

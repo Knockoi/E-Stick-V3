@@ -1,6 +1,6 @@
 # E-Stick-V2   
 ## Language Selection:
-[English](https://github.com/Knockoi/E-Stick/blob/main/README.md) | [简体中文](https://github.com/Knockoi/E-Stick/blob/main/ReadmeCN.md) | [繁體中文](https://github.com/Knockoi/E-Stick/blob/main/ReadmeTC.md)  
+[English](https://github.com/Knockoi/E-STICK-V2/edit/main/README.md) | [简体中文](https://github.com/Knockoi/E-Stick/blob/main/ReadmeCN.md) | [繁體中文](https://github.com/Knockoi/E-Stick/blob/main/ReadmeTC.md)  
 ## Overview  
 This birthday gift was specially designed for my elementary school teacher to maximize the utility of the projector. It has a wireless mouse function, so I can control the projector easily without going back to my computer.
 It also has a laser function for easy labeling of important content. For added convenience, we added a gyroscope function that allows me to move the mouse via somatosensory movement, and added directional buttons for more precise positioning of the mouse.

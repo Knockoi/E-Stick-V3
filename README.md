@@ -22,11 +22,11 @@ For an even better experience, the gyroscope also enables Apple Pencil-like func
 - Customize Keys: Use Bluetooth to connect to your phone or computer to change the E-Stick's key functions.
   
 ## Key Functions  
-- Left: Same function as left mouse button, can be customized by using mode button.
+- Left button Same function as left mouse button, can be customized by mode button.
 - Right button Same function as right mouse button, can be customized with mode button.
-- Joystick: 4 directions and the center button. Only the center button can be customized. The default is to press and hold to turn on the laser.
+- Joystick You can move freely, default is mouse move (Spotlight move).
 - MODE key can change the mode. Press and hold >= 5 seconds to enable Bluetooth connection.
-- BOOT button Download button. Press and hold Boot, then press Reset to activate the firmware download mode to download the firmware through the serial port.
+- BOOT button Download button. Press and hold Boot, then press Reset to activate the firmware download mode and download the firmware through the serial port.
 - RESET button Press this button to reboot the system.
 - On/Off Button Press the button to turn on the system if the duration of the button is longer than 30ms but less than 2s. Pressing the button twice in a row within 1s is recognized as OFF.
     

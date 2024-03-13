@@ -6,7 +6,7 @@
 這份生日禮物是為了我國小老師特別設計的，以最大程度提高投影機的實用性。它具備了無線滑鼠功能，讓我無需再返回電腦，可以輕鬆控制投影機。
 此外，它還搭載了雷射功能，方便標示重要內容。為了更加便利，我們加入了陀螺儀功能，使我可以通過體感移動鼠標，並增加了方向按鍵，以更精確定位鼠標位置。
 為了有更好的體驗利用陀螺儀還實現了類似Apple Pencil的功能，讓E-Stick可以在投影幕上繪圖或書寫。目前，E-Stick擁有這些功能，而其他功能正在不斷開發中。
-  ![image](https://github.com/Knockoi/E-Stick/blob/main/Image/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202023-09-16%20235403.png)
+  ![image](https://github.com/Knockoi/E-STICK-V2/blob/main/Image/E-Stick.png)
   
 ## 硬體  
 - MCU使用ESP32-C3-MINI-1為了小空間使用模組版本。

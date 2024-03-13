@@ -4,7 +4,7 @@
 ## Overview  
 This birthday gift was specially designed for my elementary school teacher to maximize the utility of the projector. It has a wireless mouse function, so I can control the projector easily without going back to my computer.
 It also has a laser function for easy labeling of important content. For added convenience, we added a gyroscope function that allows me to move the mouse via somatosensory movement, and added directional buttons for more precise positioning of the mouse.
-For an even better experience, the gyroscope also enables Apple Pencil-like functionality, allowing the E-Stick to draw or write on the projection screen. Currently, the E-Stick has these features and others are being developed.
+For an even better experience, the gyroscope also enables Apple Pencil-like functionality, allowing the E-Stick to draw or write on the projection screen. Currently, the E-Stick has these features and others are being developed.  
   ![image](https://github.com/Knockoi/E-STICK-V2/blob/main/Image/E-Stick.png)
   
 ## Hardware  

@@ -1,4 +1,6 @@
 # E-Stick-V2   
+### Now Order Online Best Quality PCB+Assembly from Just $2 for 1-8 Layer PCBs, get JLCPCB $60 new user coupons https://jlcpcb.com/HAR Order Now.
+    
 ## Language Selection:
 [English](https://github.com/Knockoi/E-STICK-V2/blob/main/README.md) | [日本語](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeJP.md) | [繁體中文](https://github.com/Knockoi/E-STICK-V2/blob/main/ReadmeTC.md)  
 

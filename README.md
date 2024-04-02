@@ -5,7 +5,11 @@
   
 ## Trailer Video  
 Act I: https://www.youtube.com/watch?v=njI8RSczQoE
-  
+
+  ## Acknowledgments  
+I would like to express my sincere thanks to JLCPCB for their support and sponsorship of this project, without which I would not have been able to complete this project. Without the help of JLCPCB, I would not have been able to complete this project successfully, not only did JLCPCB provide me with the printed circuit boards for my project, but the quality of their PCBs was very good, which fully met the requirements of my project. Once again, I would like to express my sincere thanks to JLCPCB for their support, which means a lot to me as I continue to work hard on this project and create more valuable works. Thanks to JLCPCB, my path of creation has become smoother.      
+JLCPCB is a leading PCB manufacturer known for its superior quality, fast turnaround time and affordability. The company's commitment to precision and adherence to industry standards ensures high quality PCBs. JLCPCB caters to global customers with its user-friendly platform, transparent pricing and comprehensive services including assembly options. Its efficient processes and fast manufacturing make it an ideal choice for projects with tight deadlines. Overall, JLCPCB is a reliable and cost-effective solution for a wide range of engineering and innovation needs.  
+    
 ## Overview  
 This birthday gift was specially designed for my elementary school teacher to maximize the utility of the projector. It has a wireless mouse function, so I can control the projector easily without going back to my computer.
 It also has a laser function for easy labeling of important content. For added convenience, we added a gyroscope function that allows me to move the mouse via somatosensory movement, and added directional buttons for more precise positioning of the mouse.

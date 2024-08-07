@@ -1,13 +1,13 @@
 #include <Wire.h>
-#include "SparkFun_BMI270_Arduino_Library.h"
-#include <SparkFun_MAX1704x_Fuel_Gauge_Arduino_Library.h> 
-#include <BleConnectionStatus.h>
-#include <BleCompositeHID.h>
-#include <KeyboardDevice.h>
-#include <MouseDevice.h>   
-#include <Adafruit_NeoPixel.h> 
-#include <driver/rtc_io.h>
-#include <PushButton.h>
+#include "SparkFun_BMI270_Arduino_Library.h"                 //https://github.com/sparkfun/SparkFun_BMI270_Arduino_Library
+#include <SparkFun_MAX1704x_Fuel_Gauge_Arduino_Library.h>    //https://github.com/sparkfun/SparkFun_MAX1704x_Fuel_Gauge_Arduino_Library
+#include <BleConnectionStatus.h>                             //https://github.com/Mystfit/ESP32-BLE-CompositeHID
+#include <BleCompositeHID.h>                                 //..
+#include <KeyboardDevice.h>                                  //..
+#include <MouseDevice.h>                                     //..
+#include <Adafruit_NeoPixel.h>                               //https://github.com/adafruit/Adafruit_NeoPixel
+#include <driver/rtc_io.h>                       
+#include <PushButton.h>                                      //https://github.com/pololu/pushbutton-arduino
 
 
 #define MODE_TAP   39          // 模式切換按鈕  

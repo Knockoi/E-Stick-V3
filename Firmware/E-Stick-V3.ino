@@ -296,12 +296,13 @@ void Pointer(){
   if(Mouse_Pointer == 1){
     mouse->mouseMove(prevX, prevY);
     mouse->sendMouseReport();
-  } else {
+  } 
+  if(Mouse_Pointer == 2){
     mouse->mouseMove(xValue, yValue);
     mouse->sendMouseReport();
   }
   
-  if(Mouse_Pointer>1){
+  if(Mouse_Pointer>2){
     Mouse_Pointer = 0;
   }
 
@@ -410,7 +411,6 @@ void loop() {
 }
 
 
-
 //-------------------------------------------------------------------------------------------------------切換模式切換方式
 void SWM(void *pvParameters){
   
@@ -426,6 +426,7 @@ void SWM(void *pvParameters){
       }
     }
    break;
+
   case 2:
   if (xValue < JOYSTICK_MIN + 50){      // 如果搖桿滑到最左边
    MODE--;                              // MODE 减一
@@ -450,18 +451,31 @@ void SPOT(void *pvParameters){
    myButton.update();
 
  if (myButton.isDoubleClicked()){
-    keyboard->keyPress(KEY_W);
-    vTaskDelay(100);
-    keyboard->keyRelease(KEY_W);
-
-    void BLE_KEYBOARD_SPOTLIGHT();
-    MODE = 7;
-    } else {
-    keyboard->keyRelease(KEY_W);
+   Mouse_Pointer ++;
     }
+ if(Mouse_Pointer < 2){
+  Mouse_Pointer == 1;
+ }
 
+  switch(Mouse_Pointer){
+  case 1:
+  while (1)
+  {
+    mouse->mouseMove(prevX, prevY);
+    mouse->sendMouseReport();
+  }
+  
+  case 2:
+  while (1)
+  {
+   mouse->mouseMove(xValue, yValue);
+    mouse->sendMouseReport();
+  }
 
-
+  default: 
+    Serial.println("Mouse Error Code");
+    break;
+  }
 
 }
 
@@ -499,7 +513,7 @@ void BLEHID(void *pvParameters){
   //-------------------------------------------------------------------------模式切換
  
   switch(MODE){
-  //------------------------------------------------------------------------模式切換設定(模式1)橘色(陀螺儀+滑鼠左右鍵)                 
+  //------------------------------------------------------------------------模式切換設定(模式1)橘色(滑鼠左右鍵)                 
   case 1:                  
     Serial.println("MODE1");
    for (int brightness = 0; brightness <= 255; brightness += 5) {
@@ -518,14 +532,11 @@ void BLEHID(void *pvParameters){
    }
    if(compositeHID.isConnected()){
 
-    mouse->mouseMove(newX, newY);
-    mouse->sendMouseReport();
-
     BLE_MOUSE_KEY();
 
    } 
    break;
-  //------------------------------------------------------------------------模式切換設定(模式2)綠色(陀螺儀+切頁數)
+  //------------------------------------------------------------------------模式切換設定(模式2)綠色(切頁數)
   case 2:                  
     Serial.println("MODE2");
    for (int brightness = 0; brightness <= 255; brightness += 5) {
@@ -545,71 +556,13 @@ void BLEHID(void *pvParameters){
 
    if(compositeHID.isConnected()){
 
-    mouse->mouseMove(newX, newY);
-    mouse->sendMouseReport();
-
     BLE_KEYBOARD_POINT();
    
    }
    break;
-  //------------------------------------------------------------------------模式切換設定(模式3)藍色(搖桿+滑鼠左右鍵)
+  //------------------------------------------------------------------------模式切換設定(模式3)藍色(音量控制)
   case 3:                  
     Serial.println("MODE3");
-   for (int brightness = 0; brightness <= 255; brightness += 5) {
-    strip1.setPixelColor(0, strip1.Color(0, 0, brightness));  // 控制第一颗 LED (蓝色)
-    strip1.setPixelColor(1, strip1.Color(0, 0, brightness));  // 控制第二颗 LED (蓝色)
-    strip1.show();  // 顯示設置的顏色
-    break;
-   }
-    vTaskDelay(2500);  // 等待 2.5 秒
-    strip1.clear();  // 清除第一條燈帶的顏色
-    strip1.show();   // 顯示燈帶熄滅
-
-   if (digitalRead(interruptPin) == LOW) {
-    // 当 interruptPin 为高电平时，执行以下代码
-    digitalWrite(interruptPin, HIGH); // 将 interruptPin 设为低电平
-   }
-
-   if(compositeHID.isConnected()){
-
-    mouse->mouseMove(xValue, yValue);
-    mouse->sendMouseReport();
-
-    BLE_MOUSE_KEY();  
-  
-   }  
-
-   break;
-  //------------------------------------------------------------------------模式切換設定(模式4)白色(搖桿+切頁數)
-  case 4:                  
-    Serial.println("MODE4");
-   for (int brightness = 0; brightness <= 255; brightness += 5) {
-    strip1.setPixelColor(0, strip1.Color(brightness, brightness, brightness));  // 控制第一顆 LED (白色)
-    strip1.setPixelColor(1, strip1.Color(brightness, brightness, brightness));  // 控制第二顆 LED (白色)
-    strip1.show();  // 顯示設置的顏色
-    break;
-   }
-    vTaskDelay(2500);  // 等待 2.5 秒
-    strip1.clear();  // 清除第一條燈帶的顏色
-    strip1.show();   // 顯示燈帶熄滅
-
-   if (digitalRead(interruptPin) == LOW) {
-    // 当 interruptPin 为高电平时，执行以下代码
-    digitalWrite(interruptPin, HIGH); // 将 interruptPin 设为低电平
-   }
-
-   if(compositeHID.isConnected()){
-
-    mouse->mouseMove(xValue, yValue);
-    mouse->sendMouseReport();
-
-    BLE_KEYBOARD_POINT();
-
-   } 
-   break;
-  //------------------------------------------------------------------------模式切換設定(模式5)紅色(陀螺儀+音量切換)  
-  case 5:                  
-    Serial.println("MODE5");
    for (int brightness = 0; brightness <= 255; brightness += 5) {
     strip1.setPixelColor(0, strip1.Color(brightness, 0, 0));  // 控制第一顆 LED (紅色)
     strip1.setPixelColor(1, strip1.Color(brightness, 0, 0));  // 控制第二顆 LED (紅色)
@@ -622,44 +575,13 @@ void BLEHID(void *pvParameters){
 
    if(compositeHID.isConnected()){
 
-    mouse->mouseMove(newX, newY);
-    mouse->sendMouseReport();
-
     BLE_KEYBOARD_VOICE();
 
    } 
    break;
-  //------------------------------------------------------------------------模式切換設定(模式6)紫色(陀螺儀+遊戲模式)
-  case 6:
-    Serial.println("MODE6");
-    for (int brightness = 0; brightness <= 255; brightness += 5) {
-    strip1.setPixelColor(0, strip1.Color(brightness, 0, brightness));  // 控制第一顆 LED (紫色)
-    strip1.setPixelColor(1, strip1.Color(brightness, 0, brightness));  // 控制第二顆 LED (紫色)
-    strip1.show();  // 顯示設置的顏色
-    break;
-   }
-    vTaskDelay(2500);  // 等待 2.5 秒
-    strip1.clear();  // 清除第一條燈帶的顏色
-    strip1.show();   // 顯示燈帶熄滅
-
-    if(compositeHID.isConnected()){
-      strip2.setPixelColor(0, strip2.Color(0, 0, 0));
-      strip2.setPixelColor(1, strip2.Color(0, 0, 0));
-      vTaskDelay(250); 
-      strip2.setPixelColor(0, strip2.Color(0, 0, 0));
-      strip2.setPixelColor(1, strip2.Color(0, 0, 0));
-   } 
-  
-    if(compositeHID.isConnected()){
-
-    mouse->mouseMove(newX, newY);
-    mouse->sendMouseReport();
-
-    BLE_KEYBOARD_POINT2();
-    
-   } 
-  case 7:
-    Serial.println("MODE7");
+  //------------------------------------------------------------------------模式切換設定(模式4)白色(聚光燈設定)
+  case 4:                  
+    Serial.println("MODE4");
   for (int brightness = 0; brightness <= 255; brightness += 5) {
     strip1.setPixelColor(0, strip1.Color(0, brightness/2, brightness));  // 控制第一顆 LED (紅色)
     strip1.setPixelColor(1, strip1.Color(0, brightness/2, brightness));  // 控制第二顆 LED (紅色)
@@ -686,7 +608,7 @@ void BLEHID(void *pvParameters){
 
 
   break;
-   //------------------------------------------------------------------------模式切換設定(錯誤)
+  //------------------------------------------------------------------------模式切換設定(錯誤)
   default: 
     Serial.println("Unknow Error Code");
     break;

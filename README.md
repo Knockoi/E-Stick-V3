@@ -1,4 +1,4 @@
-# E-Stick-V2   
+# E-Stick-V3   
 ### Now Order Online Best Quality PCB+Assembly from Just $2 for 1-8 Layer PCBs, get JLCPCB $60 new user coupons https://jlcpcb.com/HAR Order Now.
     
 ## Language Selection:

@@ -6,7 +6,7 @@
 
   
 ## Trailer Video  
-Act I: https://www.youtube.com/watch?v=njI8RSczQoE
+Act I: https://www.youtube.com/watch?v=njI8RSczQoE  
 Beta Bliud: https://youtu.be/r_apQx48-lI  
   ## Acknowledgments  
 I would like to express my sincere thanks to JLCPCB for their support and sponsorship of this project, without which I would not have been able to complete this project. Without the help of JLCPCB, I would not have been able to complete this project successfully, not only did JLCPCB provide me with the printed circuit boards for my project, but the quality of their PCBs was very good, which fully met the requirements of my project. Once again, I would like to express my sincere thanks to JLCPCB for their support, which means a lot to me as I continue to work hard on this project and create more valuable works. Thanks to JLCPCB, my path of creation has become smoother.      
